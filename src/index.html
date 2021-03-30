@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>H2OC Web App</title>
+  <!-- <script type="module" src="https://unpkg.com/@esri/calcite-components/dist/calcite/calcite.esm.js"></script> -->
+  <!-- <script nomodule="" src="https://unpkg.com/@esri/calcite-components/dist/calcite/calcite.js"></script> -->
+  <!-- <link rel="stylesheet" type="text/css" href="https://unpkg.com/@esri/calcite-components/dist/calcite/calcite.css" /> -->
+  <link rel="stylesheet" href="https://s3-us-west-1.amazonaws.com/patterns.esri.com/files/calcite-web/1.2.5/css/calcite-web.min.css">
+  <script src="https://s3-us-west-1.amazonaws.com/patterns.esri.com/files/calcite-web/1.2.5/js/calcite-web.min.js"></script>
+
+
+</head>
+
+<body>
+  <noscript> JavaScript is required in order to use this app </noscript>
+  
+  <!-- <div class="wrapper">
+    <div class="map" id="viewDiv"></div>
+    <aside class="aside aside-left">
+      <div class="side-panel phone-column-6 tablet-column-12 column-10 padding-left-0 padding-right-0"> 
+        <calcite-panel id='title-panel' dir='ltr'>
+          <h1 id='title' class='heading' slot='header-content'>Where does your stormwater go?</h1>
+        </calcite-panel>
+        
+        <div id="search"></div>
+        <calcite-panel id='detail-panel' dir='ltr'>
+
+          <div id='toggle-content-tools'>
+            <button aria-label="Info" title="Close" class="detail btn-fill btn btn-transparent">
+              <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                <path d="M2 24l14-14 14 14H2z"></path>
+              </svg>
+            </button>
+          </div>
+          <h3 class="details-title">Welcome!</h3>
+            <p class="details-content">Search for an address to learn more about where water goes when it enters the
+              storm drain.
+              <br>If you don't know the address, use one of these search methods:
+            <ul>
+              <li>Click the search box and type in an address or choose <b>Use current location</b></li>
+              <li>Click within the map</li>
+            </ul>
+            </p>
+          
+        </calcite-panel>
+        <calcite-panel dir='ltr'>
+          <div id='results'></div>
+          
+        </calcite-panel>
+        <calcite-panel dir="ltr">
+          <div id='share'></div>
+        </calcite-panel>
+
+      </div>
+    </aside>
+  </div> -->
+
+  <!-- <div class="grid-container grid-container leader-0 trailer-0 padding-left-0 padding-right-0" style="height: 100%" > -->
+  <div class="wrapper">
+    <!-- <div class="phone-column-6 tablet-column-12 column-10 padding-left-0 padding-right-0 animate-in-down"> -->
+      <div class="map" id="viewDiv"></div>
+      <aside class="aside aside-left">
+        <div id="sp" class="esri-widget app-panel">
+          <div class="panel panel-no-border animate-in-down">
+            <h1 id='title' class='heading' slot='header-content'>Where does your stormwater go?</h1>
+          </div>
+          <div id="search"></div>
+          <div class="panel panel-no-border animate-in-down">
+            <h3 class="details-title">Welcome!</h3>
+              <p class="details-content">Search for an address to learn more about where water goes when it enters the
+                storm drain.
+                <br>If you don't know the address, use one of these search methods:
+              <ul>
+                <li>Click the search box and type in an address or choose <b>Use current location</b></li>
+                <li>Click within the map</li>
+              </ul>
+              <button id="switch" class="btn">Display map</button>
+
+              </p>
+          </div>
+          <div id='results'></div>
+        </div>
+      </aside>
+    <!-- </div> -->
+
+    
+  </div>
+  <!-- </div> -->
+  <!-- </div> -->
+  
+<!-- 
+  <div id="appMain" class="grid-container leader-0 trailer-0 padding-left-0 padding-right-0">
+    <div id="sidePanel" class="side-panel phone-column-6 tablet-column-12 column-10 padding-left-0 padding-right-0">
+      <div class="panel panel-no-border">
+        <h1 id='title' class='heading' slot='header-content'>Where does your stormwater go?</h1>
+      </div>
+      <div id="search"></div>
+      <div class="panel">
+        <h3 class="details-title">Welcome!</h3>
+          <p class="details-content">Search for an address to learn more about where water goes when it enters the
+            storm drain.
+            <br>If you don't know the address, use one of these search methods:
+          <ul>
+            <li>Click the search box and type in an address or choose <b>Use current location</b></li>
+            <li>Click within the map</li>
+          </ul>
+          </p>
+      </div>
+    </div>
+    <div class="map" id="viewDiv" tabindex="0"></div>
+  </div>
+ -->
+
+</body>
+
+</html>
