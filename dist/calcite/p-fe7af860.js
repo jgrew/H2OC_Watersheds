@@ -1,0 +1,1 @@
+import{h as t}from"./p-0f61cfe6.js";function e(e){return Math.min(Math.max(Math.ceil(e),1),6)}const r=(e,a)=>{const r=`h${e.level}`;return delete e.level,t(r,Object.assign({},e),a)};export{r as C,e as a};
