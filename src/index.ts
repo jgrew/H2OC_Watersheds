@@ -149,20 +149,20 @@ const rsbDSStore = new FeatureLayer({
 //     title: 'Stormwater Network'
 // });
 
-const swInletLayer = new FeatureLayer({
-    url: 'https://ocgis.com/arcpub/rest/services/Flood/Stormwater_Network/FeatureServer/0',
-    title: 'Inlets'
-});
+// const swInletLayer = new FeatureLayer({
+//     url: 'https://ocgis.com/arcpub/rest/services/Flood/Stormwater_Network/FeatureServer/0',
+//     title: 'Inlets'
+// });
 
-const swDischargeLayer = new FeatureLayer({
-    url: 'https://ocgis.com/arcpub/rest/services/Flood/Stormwater_Network/FeatureServer/2',
-    title: 'Outlets'
-});
+// const swDischargeLayer = new FeatureLayer({
+//     url: 'https://ocgis.com/arcpub/rest/services/Flood/Stormwater_Network/FeatureServer/2',
+//     title: 'Outlets'
+// });
 
-const swManholeLayer = new FeatureLayer({
-    url: 'https://ocgis.com/arcpub/rest/services/Flood/Stormwater_Network/FeatureServer/3',
-    title: 'Manholes'
-});
+// const swManholeLayer = new FeatureLayer({
+//     url: 'https://ocgis.com/arcpub/rest/services/Flood/Stormwater_Network/FeatureServer/3',
+//     title: 'Manholes'
+// });
 
 const swGravityMainLayer = new FeatureLayer({
     url: 'https://ocgis.com/arcpub/rest/services/Flood/Stormwater_Network/FeatureServer/7',
@@ -212,7 +212,8 @@ const swChannelLayer = new FeatureLayer({
 });
 
 const swLayer = new GroupLayer({
-    layers: [swChannelLayer, swGravityMainLayer, swManholeLayer, swDischargeLayer, swInletLayer],
+    // layers: [swChannelLayer, swGravityMainLayer, swManholeLayer, swDischargeLayer, swInletLayer],
+    layers: [swChannelLayer, swGravityMainLayer],
     title: 'Stormwater Network'
 })
 
