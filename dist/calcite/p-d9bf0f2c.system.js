@@ -1,1 +1,0 @@
-System.register(["./p-4105a996.system.js"],(function(e){"use strict";var t;return{setters:[function(e){t=e.h}],execute:function(){e("a",(function(e){return Math.min(Math.max(Math.ceil(e),1),6)})),e("C",(function(e,n){var r="h"+e.level;return delete e.level,t(r,Object.assign({},e),n)}))}}}));

@@ -244,9 +244,19 @@ const countyLayer = new FeatureLayer({
 //     }
 // })
 
+const watershedLayer = new FeatureLayer({
+    portalItem: {
+        id: '0d7651f1f79f4fd79839db3d04c18f3a',
+    },
+    layerId: 1,
+    opacity: .5,
+    outFields: ['Watershed'],
+    title: 'Watersheds'
+});
+
 const map = new ArcGISMap({
     basemap: 'topo-vector',
-    layers: [countyLayer, swLayer, rsbDSLayer, rsbLayer]
+    layers: [countyLayer, watershedLayer, swLayer, rsbDSLayer, rsbLayer]
 });
 
 // View
@@ -342,6 +352,7 @@ let lookupResults = new LookupResults({
     rsbDSLayer: rsbDSLayer,
     rsbDSStore: rsbDSStore,
     channelLayer: swChannelLayer,
+    watershedLayer: watershedLayer,
     container: 'results'
 });
 
@@ -350,6 +361,7 @@ function cleanUpResults() {
     rsbLayer.visible = false;
     rsbDSLayer.visible = false;
     swChannelLayer.definitionExpression = "1=1";
+    watershedLayer.visible = false;
     lookupResults.clearResults();
 }
 
