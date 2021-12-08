@@ -149,10 +149,10 @@ const rsbDSStore = new FeatureLayer({
 //     title: 'Stormwater Network'
 // });
 
-// const swInletLayer = new FeatureLayer({
-//     url: 'https://ocgis.com/arcpub/rest/services/Flood/Stormwater_Network/FeatureServer/0',
-//     title: 'Inlets'
-// });
+const swInletLayer = new FeatureLayer({
+    url: 'https://ocgis.com/arcpub/rest/services/Flood/Stormwater_Network/FeatureServer/0',
+    title: 'Inlets'
+});
 
 // const swDischargeLayer = new FeatureLayer({
 //     url: 'https://ocgis.com/arcpub/rest/services/Flood/Stormwater_Network/FeatureServer/2',
@@ -213,7 +213,7 @@ const swChannelLayer = new FeatureLayer({
 
 const swLayer = new GroupLayer({
     // layers: [swChannelLayer, swGravityMainLayer, swManholeLayer, swDischargeLayer, swInletLayer],
-    layers: [swChannelLayer, swGravityMainLayer],
+    layers: [swChannelLayer, swGravityMainLayer, swInletLayer],
     title: 'Stormwater Network'
 })
 
