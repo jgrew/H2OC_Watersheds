@@ -88,7 +88,7 @@ class LookupResults extends Widget {
     _handles: Handles = new Handles();
     _drainsTo = [
         { to: 'The Pacific Ocean', watershed: 'Aliso' },
-        { to: 'Anaheim Bay / Huntington Harbor', watershed: 'Anaheim Bay' },
+        { to: 'Anaheim Bay / Huntington Harbour', watershed: 'Anaheim Bay' },
         { to: 'Newport Bay', watershed: 'Newport Bay' },
         { to: 'The Pacific Ocean', watershed: 'Coyote Creek' },
         { to: 'The Pacific Ocean', watershed: 'Dana Point' },
